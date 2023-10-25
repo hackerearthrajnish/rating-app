@@ -1,0 +1,94 @@
+.movie-container {
+    width: 80vw;
+    margin: 2em auto;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 30px;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cover img{
+    width: 200px;
+    height: 310px;
+}
+
+.right{
+    width: 80%;
+    margin: 80px 2em 1em;
+}
+.title{
+    font-weight: 600;
+    font-size: 30px
+}
+.write-rating{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.5em 0;
+}
+
+.right .form-group label{
+    font-weight: 600;
+}
+
+.no-review{
+    margin: 1em 0;
+    background-color: #b4b1b1;
+    padding: 1em;
+    border-radius: 4px;
+    
+}
+.no-review h6{
+    font-weight: 600;
+    color: red;
+}
+
+.review-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1em 0;
+    background-color: #b4b1b1;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.review-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    
+}
+
+@media (max-width:600px) {
+    .top{
+        flex-direction: column;
+    }
+    .cover img{
+        width: 250px;
+
+    }
+    .right{
+        width: 100%;
+        margin: 1em 0;
+    }
+    .rating{
+        max-width: 250px;
+    }
+}

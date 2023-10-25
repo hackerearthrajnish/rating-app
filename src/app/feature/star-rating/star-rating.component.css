@@ -1,0 +1,20 @@
+.star {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    color: #d3d3d3;
+    font-family :'Times New Roman', Times, serif;
+    margin-right: 3px;
+    height: 25px;
+}
+
+.full {
+    color: red;
+}
+
+.half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color: red;
+}

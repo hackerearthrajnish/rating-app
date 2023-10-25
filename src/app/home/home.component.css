@@ -1,0 +1,114 @@
+.home-container{
+    display: flex;
+
+}
+
+.all-movies{
+    width: 75%;  
+    border: 1px solid yellow;
+
+}
+.popular-movies{
+    width: 25%;
+    height: calc(100vh - 50px);
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin:  1em;
+    border-left: 3px solid orange;
+    padding: 0.5em;
+    font-size: 15px;
+}
+
+.top h4{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.view-all{
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: orange;
+    padding: 0.3em;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+.view-all:hover{
+    color: blue;
+    background-color: #fff;
+}
+.movie-thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    margin: 1em;
+    /* width: 100%; */
+}
+
+.movie{
+    margin: 0.5em 0.5em ;
+    cursor: pointer;
+}
+.cover img{
+  width: 130px;
+  border-radius: 4px;
+}
+
+.details .name{
+   
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+    margin: 0.7em 0 0;
+}
+
+.details .rating {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-heading {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.popular-movie-details{
+    width: 100%;
+}
+.popular-movie-details .name{
+    font-weight: 600;
+
+}
+
+.popular-movie-details  .rating {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-movie-thumbnail{
+    padding: 0.5em;
+    width: 100%;
+}
+
+@media  (max-width: 688px) {
+    .home-container{
+        flex-direction: column;
+    
+    }
+    .all-movies{
+        width: 100%;      
+        border-bottom: 1px solid yellow;
+    
+    }
+    .popular-movies{
+        width: 100%;
+    }
+}
